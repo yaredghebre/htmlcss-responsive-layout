@@ -1,3 +1,40 @@
+/* VARIABLES */
+:root {
+    /* Colors */
+    --bg-purple: #9792e4;
+    --bg-blue: #0084fd;
+    --bg-lightblue: #b5ddff;
+    --color-yellow: #fdc15f;
+
+    /* Sizes */
+}
+
+/* RESET */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* COMMON */
+/* Typography */
+body {
     font-family: 'PT Sans', sans-serif;
 }
+
+/* Layout */
+
+/* Utilities */
