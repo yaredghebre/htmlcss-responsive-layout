@@ -199,8 +199,8 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-    h3 {
-        font-size: 2rem;
+    h2 {
+        /* font-size: 2rem; */
     }
 }
 
@@ -315,4 +315,49 @@ nav {
     }
 }
 
+/* About Us */
+.about-img {
+    /* text-align: center; */
+    background-color: red;
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
 
+@media screen and (min-width: 768px) {
+    .about-row {
+        display: flex;
+    }
+
+    .about-col-left {
+        width: 70%;
+    }
+
+    .about-col-right {
+        width: 30%;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .about-row {
+        display: flex;
+    }
+
+    .about-col-left {
+        width: 70%;
+    }
+
+    .about-col-right {
+        width: 30%;
+        padding: 0 30px;
+    }
+}
