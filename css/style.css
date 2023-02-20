@@ -38,16 +38,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* Layout */
-.desktop-container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.tablet-container {
-    width: 
-}
-
 /* Utilities */
 .flex {
     display: flex;
@@ -77,7 +67,16 @@ body {
     gap: 20px;
 }
 
+.b-r {
+    border-radius: 20px;
+}
+
+.section-padding {
+    padding: 50px 20px;
+}
+
 /* HEADER */
+/* Navigator */
 nav {
     background-color: var(--bg-blue);
     color: var(--font-white);
@@ -116,5 +115,48 @@ nav {
         width: 70%;
         margin: 0 auto;
     }
-    
+}
+
+/* Jumbotron */
+.jumbotron {
+    /* debug */
+}
+
+.jumbotron-wrapper {
+    /* debug */
+}
+
+.j-row {
+    /* debug */
+}
+
+.j-col {
+    /* debug */
+}
+
+.j-card {
+    margin: 20px ;
+    padding: 20px;
+    background-color: var(--bg-lightblue);
+}
+
+@media screen and (min-width: 768px) {
+    .j-row {
+        display: flex;
+    }
+
+    .topleft {
+        width: 66.66%;
+    }
+
+    .topright {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .jumbotron-wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
