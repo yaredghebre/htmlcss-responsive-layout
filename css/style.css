@@ -4,6 +4,7 @@
     --bg-purple: #9792e4;
     --bg-blue: #0084fd;
     --bg-lightblue: #b5ddff;
+    --bg-white: white;
 
     --font-yellow: #fdc15f;
     --font-purple: #9792e4;
@@ -38,6 +39,10 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+.ta-center {
+    text-align: center;
+}
+
 /* Utilities */
 .flex {
     display: flex;
@@ -67,8 +72,28 @@ body {
     gap: 20px;
 }
 
+.m-20 {
+    margin: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
 .b-r {
     border-radius: 20px;
+}
+
+.b-r-40 {
+    border-radius: 40px;
 }
 
 .section-padding {
@@ -91,14 +116,17 @@ nav {
 
 .header-links {
     top: 40px;
-    right: 20px;
+    right: 40px;
     display: none;
-    /* debug */
 }
 
 @media screen and (min-width: 768px) {
     .nav-container {
         width: 100%;
+    }
+
+    .header-settings {
+        display: block;
     }
 }
 
@@ -112,7 +140,7 @@ nav {
     }
 
     .nav-container {
-        width: 70%;
+        width: 65%;
         margin: 0 auto;
     }
 }
@@ -135,8 +163,6 @@ nav {
 }
 
 .j-card {
-    margin: 20px ;
-    padding: 20px;
     background-color: var(--bg-lightblue);
 }
 
@@ -145,18 +171,66 @@ nav {
         display: flex;
     }
 
-    .topleft {
+    .j-topleft {
         width: 66.66%;
     }
 
-    .topright {
+    .j-topright {
         width: 33.33%;
     }
 }
 
 @media screen and (min-width: 992px) {
     .jumbotron-wrapper {
-        width: 70%;
+        width: 65%;
         margin: 0 auto;
+    }
+}
+
+/* MAIN */
+/* Planning */
+.planning {
+    background-color: var(--bg-purple);
+    color: var(--font-white);
+}
+
+.plan-card-bottom {
+    background-color: var(--bg-white);
+    color: black;
+}
+
+.arrow-button {
+    background-color: var(--bg-purple);
+    /* debug */
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+
+}
+@media screen and (min-width: 768px) {
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .planning-wrapper {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .plan-row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .plan-col {
+        width: 45%;
+    }
+
+    .plan-card-bottom {
+        position: absolute;
+        top: 100px;
+        right: 0;
     }
 }
