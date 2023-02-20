@@ -4,8 +4,11 @@
     --bg-purple: #9792e4;
     --bg-blue: #0084fd;
     --bg-lightblue: #b5ddff;
-    --color-yellow: #fdc15f;
 
+    --font-yellow: #fdc15f;
+    --font-purple: #9792e4;
+    --font-blue: #0084fd;
+    --font-white: white;
     /* Sizes */
 }
 
@@ -36,5 +39,82 @@ body {
 }
 
 /* Layout */
+.desktop-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tablet-container {
+    width: 
+}
 
 /* Utilities */
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* HEADER */
+nav {
+    background-color: var(--bg-blue);
+    color: var(--font-white);
+}
+
+.nav-container {
+    width: 100%;
+    padding: 0 50px;
+    /* debug */
+    height: 100px;
+}
+
+.header-links {
+    top: 40px;
+    right: 20px;
+    display: none;
+    /* debug */
+}
+
+@media screen and (min-width: 768px) {
+    .nav-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-links {
+        display: block;
+    }
+
+    .header-settings {
+        display: none;
+    }
+
+    .nav-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+}
