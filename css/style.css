@@ -88,6 +88,8 @@ body {
     padding: 20px;
 }
 
+.pt-20
+
 .b-r {
     border-radius: 20px;
 }
@@ -146,22 +148,6 @@ nav {
 }
 
 /* Jumbotron */
-.jumbotron {
-    /* debug */
-}
-
-.jumbotron-wrapper {
-    /* debug */
-}
-
-.j-row {
-    /* debug */
-}
-
-.j-col {
-    /* debug */
-}
-
 .j-card {
     background-color: var(--bg-lightblue);
 }
@@ -215,7 +201,7 @@ nav {
 
 @media screen and (min-width: 992px) {
     .planning-wrapper {
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -234,3 +220,53 @@ nav {
         right: 0;
     }
 }
+
+/* Testimonials */
+.test-col {
+    color: var(--font-white);
+    background-color: var(--bg-purple);
+    flex-direction: column;
+}
+
+.test-img {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#test-1 {
+    background-image: url(../img/testimonial1.jpg);
+}
+
+#test-2 {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+#test-3 {
+    background-image: url(../img/testimonial3.jpg);
+}
+
+@media screen and (min-width: 768px) {
+    .test-col {
+        flex-direction: row;
+    }
+
+    .test-img {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .test-col {
+        flex-direction: row;
+    }
+
+    .test-img {
+        padding: 50px;
+    }
+}
+
+
