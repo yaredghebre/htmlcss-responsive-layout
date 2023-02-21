@@ -479,6 +479,13 @@ nav {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+    .start-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .start-wrapper {
         width: 40%;
@@ -486,3 +493,26 @@ nav {
     }
 }
 
+/* FOOTER */
+.footer {
+    background-color: black;
+}
+
+.footer-wrapper a {
+    color: var(--font-purple);
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer-wrapper {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
