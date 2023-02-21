@@ -53,6 +53,13 @@ body {
 .ta-center {
     text-align: center;
 }
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
 
 h4 {
     font-size: 1.5rem;
@@ -184,7 +191,7 @@ nav {
     }
 
     .nav-container {
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
 }
@@ -217,7 +224,7 @@ nav {
 
 @media screen and (min-width: 992px) {
     .jumbotron-wrapper {
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -253,15 +260,9 @@ nav {
     height: 50px;
 }
 
-@media screen and (min-width: 768px) {
-    h2 {
-        /* font-size: 2rem; */
-    }
-}
-
 @media screen and (min-width: 992px) {
     .planning-wrapper {
-        width: 60%;
+        width: 55%;
         margin: 0 auto;
     }
 
@@ -286,6 +287,10 @@ nav {
     color: var(--font-white);
     background-color: var(--bg-purple);
     flex-direction: column;
+}
+
+.test-card p:last-child {
+    font-weight: 700;
 }
 
 .test-img {
@@ -314,6 +319,10 @@ nav {
         flex-direction: row;
     }
 
+    .test-card {
+        text-align: left;
+    }
+
     .test-img {
         padding: 50px;
     }
@@ -329,7 +338,7 @@ nav {
     }
 
     .testimonials-wrapper {
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
 }
@@ -365,7 +374,7 @@ nav {
     }
 
     .features-wrapper {
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
 }
