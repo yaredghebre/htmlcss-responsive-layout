@@ -132,7 +132,7 @@ h4 {
 }
 
 .button-primary {
-    max-width: 180px;
+    max-width: 200px;
     margin: 20px 0;
     padding: 5px 40px;
 }
@@ -447,3 +447,42 @@ nav {
         padding: 0 30px;
     }
 }
+
+/* Get Started */
+.start {
+    background-color: var(--bg-purple);
+}
+
+.start-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.start-wrapper h2{
+    color: var(--font-yellow);
+    font-size: 5rem;
+}
+
+.start-wrapper span {
+    letter-spacing: 2px;
+}
+
+.btn-bottom {
+    display: inline-block;
+    width: 300px;
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#privacy-link {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+    .start-wrapper {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
