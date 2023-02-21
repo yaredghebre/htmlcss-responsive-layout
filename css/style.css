@@ -10,7 +10,6 @@
     --font-purple: #9792e4;
     --font-blue: #0084fd;
     --font-white: white;
-    /* Sizes */
 }
 
 /* RESET */
@@ -47,8 +46,16 @@ body {
     color: var(--font-white);
 }
 
+.blue {
+    color: var(--font-blue);
+}
+
 .ta-center {
     text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 /* Utilities */
@@ -108,6 +115,31 @@ body {
     padding: 50px 20px;
 }
 
+.button-primary {
+    max-width: 180px;
+    margin: 20px 0;
+    padding: 5px 40px;
+}
+
+.button-secondary {
+    padding: 5px 10px;
+}
+
+.btn-white {
+    background-color: var(--bg-white);
+    color: black;
+}
+
+.btn-blue {
+    background-color: var(--bg-blue);
+    color: var(--font-white);
+}
+
+.btn-purple {
+    background-color: var(--bg-purple);
+    color: var(--font-white);
+}
+
 /* HEADER */
 /* Navigator */
 nav {
@@ -155,7 +187,18 @@ nav {
 
 /* Jumbotron */
 .j-card {
+    /* background-color: var(--bg-lightblue); */
+}
+
+.j-col {
     background-color: var(--bg-lightblue);
+}
+
+#phone-img {
+    max-width: 320px;
+    margin-bottom: -20px;
+    display: block;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -164,11 +207,11 @@ nav {
     }
 
     .j-topleft {
-        width: 66.66%;
+        width: calc(100% / 2 * 3);
     }
 
     .j-topright {
-        width: 33.33%;
+        width: calc(100% / 3 * 2);
     }
 }
 
@@ -176,6 +219,11 @@ nav {
     .jumbotron-wrapper {
         width: 65%;
         margin: 0 auto;
+    }
+
+    .j-card {
+        display: flex;
+        flex-direction: column;
     }
 }
 
