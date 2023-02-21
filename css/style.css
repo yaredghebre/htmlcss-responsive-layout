@@ -389,18 +389,31 @@ nav {
 }
 
 /* About Us */
+.about-card {
+    line-height: 35px;
+}
+
 .about-img {
-    /* text-align: center; */
     background-color: red;
     background-image: url(../img/about.jpg);
     background-size: cover;
     background-position: center;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
+.quote-open {
+    font-size: 4rem;
+    top: 0;
+    right: 0;
+}
+
 @media screen and (min-width: 768px) {
+    .about-card h2 {
+        font-size: 3rem;
+    }
+
     .about-row {
         display: flex;
     }
@@ -417,7 +430,7 @@ nav {
 
 @media screen and (min-width: 992px) {
     .about-wrapper {
-        width: 60%;
+        width: 55%;
         margin: 0 auto;
     }
 
