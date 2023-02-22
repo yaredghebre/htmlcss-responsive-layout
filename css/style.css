@@ -235,6 +235,7 @@ nav {
 
     .j-card-top {
         display: flex;
+        align-self: flex-end;
     }
 }
 
